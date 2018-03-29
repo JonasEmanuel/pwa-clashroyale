@@ -1,7 +1,5 @@
 var arenas = [];
 
-getArenas();
-
 function getArenas(){
     fetch("http://www.clashapi.xyz/api/arenas").then(response => {
         response.json().then(arenas => {

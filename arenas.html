@@ -13,17 +13,19 @@
         <div class="title">Clash Royale PWA App</div>
     </div>
     <div class="container">
-        <div class="cards arenas">
-
-        </div>
+        <div class="cards arenas"></div>
     </div>
 </body>
+
+
+
+<script src="./assets/scripts/app.js"></script>
 
 <script>
     navigator.serviceWorker.register("./sw.js")
         .then(res => console.log("SW registered!"))
         .catch(error => console.log(error));
-</script>
 
-<script src="./assets/scripts/app.js"></script>
+        getArenas();
+</script>
 </html>
